@@ -5,14 +5,12 @@
             "src": "package.json",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "dist/Lab2"
+                "distDir": "dist/Lab2/browser"
             }
         }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
-        }
+        { "src": "/(.*\\..*)", "dest": "/$1" },
+        { "src": "/(.*)", "dest": "/index.html" }
     ]
 }
