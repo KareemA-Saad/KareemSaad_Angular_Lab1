@@ -76,7 +76,6 @@ src/
 
 - [Angular](https://angular.io/) - The web framework used
 - [TypeScript](https://www.typescriptlang.org/) - Programming language
-- [RxJS](https://rxjs.dev/) - Reactive programming library
 - [Angular CLI](https://cli.angular.io/) - Command line interface
 
 ## 📝 License
@@ -85,9 +84,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Authors
 
-- Your Name - Initial work
-
-## 🙏 Acknowledgments
-
-- Angular Team for the amazing framework
-- All contributors who have helped shape this project 
+- Kareem Ahmed Saad
