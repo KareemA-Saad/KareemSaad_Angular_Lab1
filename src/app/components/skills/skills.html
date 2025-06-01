@@ -1,0 +1,16 @@
+<section id="skills" class="skills-section section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item" *ngFor="let skill of skills">
+        <div class="skill-info">
+          <h3 class="skill-name">{{skill.name}}</h3>
+          <span class="skill-percentage">{{skill.percentage}}%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" [style.width.%]="skill.percentage"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

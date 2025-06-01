@@ -1,0 +1,29 @@
+<section id="projects" class="projects-section section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects">
+        <div class="project-image">
+          <img [src]="project.imagepath" [alt]="project.title">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="{{project.githubLink}}" *ngIf="project.githubLink" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="{{project.liveLink}}" *ngIf="project.liveLink" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">{{project.title}}</h3>
+          <p class="project-description">{{project.description}}</p>
+          <div class="project-tech">
+            <span class="tech-tag" *ngFor="let tech of project.technologies">{{tech}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="#" class="logo">KS</a>
+      <div class="mobile-toggle" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-menu" [class.active]="isMenuOpen">
+      <ul class="navbar-links">
+        <li><a href="#" (click)="scrollToSection('hero'); toggleMenu(true)" [class.active]="activeSection === 'hero'">Home</a></li>
+        <li><a href="#about" (click)="scrollToSection('about'); toggleMenu(true)" [class.active]="activeSection === 'about'">About</a></li>
+        <li><a href="#skills" (click)="scrollToSection('skills'); toggleMenu(true)" [class.active]="activeSection === 'skills'">Skills</a></li>
+        <li><a href="#projects" (click)="scrollToSection('projects'); toggleMenu(true)" [class.active]="activeSection === 'projects'">Projects</a></li>
+        <li><a href="#contact" (click)="scrollToSection('contact'); toggleMenu(true)" [class.active]="activeSection === 'contact'">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
