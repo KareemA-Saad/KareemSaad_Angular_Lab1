@@ -76,7 +76,6 @@ src/
 
 - [Angular](https://angular.io/) - The web framework used
 - [TypeScript](https://www.typescriptlang.org/) - Programming language
-- [RxJS](https://rxjs.dev/) - Reactive programming library
 - [Angular CLI](https://cli.angular.io/) - Command line interface
 
 ## 📝 License
@@ -85,9 +84,38 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Kareem Saad - Initial work
 
-## 🙏 Acknowledgments
+## 🚀 Deployment
 
-- Angular Team for the amazing framework
-- All contributors who have helped shape this project 
+### Deploying to Vercel
+
+1. Install Vercel CLI globally:
+```bash
+npm install -g vercel
+```
+
+2. Build your Angular project:
+```bash
+ng build --configuration production
+```
+
+3. Deploy to Vercel:
+```bash
+vercel
+```
+
+Alternatively, you can deploy directly from the Vercel dashboard:
+
+1. Push your code to GitHub
+2. Go to [Vercel Dashboard](https://vercel.com/dashboard)
+3. Click "New Project"
+4. Import your GitHub repository
+5. Configure your project:
+   - Framework Preset: Angular
+   - Build Command: `ng build`
+   - Output Directory: `dist/portfolio`
+   - Install Command: `npm install`
+6. Click "Deploy"
+
+Your site will be live at `https://your-project-name.vercel.app`
