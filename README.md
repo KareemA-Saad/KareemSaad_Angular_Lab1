@@ -84,7 +84,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👥 Authors
 
-- Kareem Saad - Initial work
+- Kareem Ahmed Saad
 
 ## 🚀 Deployment
 
